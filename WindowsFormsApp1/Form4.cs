@@ -24,7 +24,7 @@ namespace WindowsFormsApp1
         private void button1_Click(object sender, EventArgs e)
         {
             SqlConnection con = new SqlConnection(cs);
-            string query = "insert into s_r_info values (@email,@Password,@ID,@Name,@Address,@Age,@photo)";
+            string query = "insert into s_r_info values (@email,@Password,@ID,@Name,@Address,@Age,@Gender,@photo)";
             SqlCommand cmd = new SqlCommand(query, con);
             cmd.Parameters.AddWithValue("@email", textBox1.Text);
             cmd.Parameters.AddWithValue("@Password", textBox2.Text);
@@ -32,6 +32,7 @@ namespace WindowsFormsApp1
             cmd.Parameters.AddWithValue("@Name", textBox4.Text);
             cmd.Parameters.AddWithValue("@Address", textBox5.Text);
             cmd.Parameters.AddWithValue("Age", numericUpDown1.Value);
+            cmd.Parameters.AddWithValue("Gender", comboBox1.SelectedItem);
             cmd.Parameters.AddWithValue("@photo", SavePhoto());
             con.Open();
             int a = cmd.ExecuteNonQuery();

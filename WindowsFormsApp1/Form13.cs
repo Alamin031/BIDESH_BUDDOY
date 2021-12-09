@@ -61,7 +61,7 @@ namespace WindowsFormsApp1
         void BindGridView()
         {
             SqlConnection con = new SqlConnection(cs);
-            string query = "select * from S_I_Portal where Student_id='" + textBox4.Text + "'";
+            string query = "select * from s_r_info where email='" + textBox4.Text + "'";
             SqlDataAdapter sda = new SqlDataAdapter(query, con);
 
             DataTable data = new DataTable();
@@ -69,7 +69,7 @@ namespace WindowsFormsApp1
             dataGridView1.DataSource = data;
 
             DataGridViewImageColumn dgv = new DataGridViewImageColumn();
-            dgv = (DataGridViewImageColumn)dataGridView1.Columns[4];
+            dgv = (DataGridViewImageColumn)dataGridView1.Columns[7];
             dgv.ImageLayout = DataGridViewImageCellLayout.Stretch;
 
             dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
@@ -93,7 +93,7 @@ namespace WindowsFormsApp1
         private void button3_Click(object sender, EventArgs e)
         {
             SqlConnection con = new SqlConnection(cs);
-            string query = "update s_r_info set email=@email,Password=@Password,ID=@ID,Name=@Name,Address=@Address,Age=@Age,photo=@photo where email=@email";
+            string query = "update s_r_info set email=@email,Password=@Password,ID=@ID,Name=@Name,Address=@Address,Age=@Age,Gender=@Gender,photo=@photo where email=@email";
             SqlCommand cmd = new SqlCommand(query, con);
             cmd.Parameters.AddWithValue("@email", textBox1.Text);
             cmd.Parameters.AddWithValue("@Password", textBox2.Text);
@@ -101,6 +101,7 @@ namespace WindowsFormsApp1
             cmd.Parameters.AddWithValue("@Name", textBox5.Text);
             cmd.Parameters.AddWithValue("@Address", textBox6.Text);
             cmd.Parameters.AddWithValue("Age", numericUpDown1.Value);
+            cmd.Parameters.AddWithValue("Gender", comboBox1.SelectedItem);
             cmd.Parameters.AddWithValue("@photo", SavePhoto());
             con.Open();
             int a = cmd.ExecuteNonQuery();
@@ -127,7 +128,8 @@ namespace WindowsFormsApp1
             textBox5.Text = dataGridView1.SelectedRows[0].Cells[3].Value.ToString();
             textBox6.Text = dataGridView1.SelectedRows[0].Cells[4].Value.ToString();
             numericUpDown1.Value = Convert.ToInt32(dataGridView1.SelectedRows[0].Cells[5].Value);
-            pictureBox1.Image = GetPhoto((byte[])dataGridView1.SelectedRows[0].Cells[6].Value);
+            comboBox1.SelectedItem = dataGridView1.SelectedRows[0].Cells[6].Value.ToString();
+            pictureBox1.Image = GetPhoto((byte[])dataGridView1.SelectedRows[0].Cells[7].Value);
         }
 
         private Image GetPhoto(byte[] photo)
