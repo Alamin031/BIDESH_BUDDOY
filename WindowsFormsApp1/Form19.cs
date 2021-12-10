@@ -18,6 +18,7 @@ namespace WindowsFormsApp1
         string cs = ConfigurationManager.ConnectionStrings["user"].ConnectionString;
         public Form19()
         {
+           
             InitializeComponent();
         }
 
