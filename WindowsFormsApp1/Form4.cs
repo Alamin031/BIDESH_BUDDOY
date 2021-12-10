@@ -16,6 +16,7 @@ namespace WindowsFormsApp1
     public partial class Form4 : Form
     {
         string cs = ConfigurationManager.ConnectionStrings["user"].ConnectionString;
+        public static string username;
         public Form4()
         {
             InitializeComponent();
@@ -32,7 +33,7 @@ namespace WindowsFormsApp1
             cmd.Parameters.AddWithValue("@Name", textBox4.Text);
             cmd.Parameters.AddWithValue("@Address", textBox5.Text);
             cmd.Parameters.AddWithValue("Age", numericUpDown1.Value);
-            cmd.Parameters.AddWithValue("Gender", comboBox1.SelectedItem);
+            cmd.Parameters.AddWithValue("Gender", textBox6.Text);
             cmd.Parameters.AddWithValue("@photo", SavePhoto());
             con.Open();
             int a = cmd.ExecuteNonQuery();
@@ -105,6 +106,16 @@ namespace WindowsFormsApp1
             {
                 pictureBox1.Image = new Bitmap(ofd.FileName);
             }
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox4_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

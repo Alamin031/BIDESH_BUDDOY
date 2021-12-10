@@ -32,6 +32,8 @@ namespace WindowsFormsApp1
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form14));
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.button5 = new System.Windows.Forms.Button();
@@ -69,9 +71,7 @@ namespace WindowsFormsApp1
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.label20 = new System.Windows.Forms.Label();
+            this.textBox15 = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -92,8 +92,8 @@ namespace WindowsFormsApp1
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.groupBox1.Controls.Add(this.textBox15);
             this.groupBox1.Controls.Add(this.label20);
-            this.groupBox1.Controls.Add(this.comboBox1);
             this.groupBox1.Controls.Add(this.label19);
             this.groupBox1.Controls.Add(this.button2);
             this.groupBox1.Controls.Add(this.numericUpDown1);
@@ -140,6 +140,23 @@ namespace WindowsFormsApp1
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Location = new System.Drawing.Point(298, 236);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(54, 19);
+            this.label20.TabIndex = 28;
+            this.label20.Text = "Gender";
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Location = new System.Drawing.Point(298, 231);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(0, 19);
+            this.label19.TabIndex = 26;
             // 
             // button2
             // 
@@ -474,33 +491,13 @@ namespace WindowsFormsApp1
             this.label2.TabIndex = 0;
             this.label2.Text = "University ID";
             // 
-            // label19
+            // textBox15
             // 
-            this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(298, 231);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(0, 19);
-            this.label19.TabIndex = 26;
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "Male",
-            "Female"});
-            this.comboBox1.Location = new System.Drawing.Point(436, 234);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(100, 27);
-            this.comboBox1.TabIndex = 27;
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(298, 236);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(54, 19);
-            this.label20.TabIndex = 28;
-            this.label20.Text = "Gender";
+            this.textBox15.Font = new System.Drawing.Font("MV Boli", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox15.Location = new System.Drawing.Point(436, 235);
+            this.textBox15.Name = "textBox15";
+            this.textBox15.Size = new System.Drawing.Size(100, 25);
+            this.textBox15.TabIndex = 29;
             // 
             // Form14
             // 
@@ -567,7 +564,7 @@ namespace WindowsFormsApp1
         private System.Windows.Forms.NumericUpDown numericUpDown1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.TextBox textBox15;
     }
 }

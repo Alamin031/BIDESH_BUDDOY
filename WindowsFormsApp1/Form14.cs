@@ -43,7 +43,7 @@ namespace WindowsFormsApp1
             cmd.Parameters.AddWithValue("@Photo", SavePhoto());
             cmd.Parameters.AddWithValue("@Year_Of_Passing_HSC", textBox13.Text);
             cmd.Parameters.AddWithValue("@CGPA_HSC", textBox14.Text);
-            cmd.Parameters.AddWithValue("@gender", comboBox1.SelectedItem);
+            cmd.Parameters.AddWithValue("@Gender", textBox15.Text);
 
 
             con.Open();
@@ -109,6 +109,7 @@ namespace WindowsFormsApp1
             textBox12.Clear();
             textBox13.Clear();
             textBox14.Clear();
+            textBox15.Clear();
             pictureBox1.Image = Properties.Resources.no_image_avaiable;
         }
 

@@ -15,6 +15,7 @@ namespace WindowsFormsApp1
     public partial class Form1 : Form
     {
         string cs = ConfigurationManager.ConnectionStrings["user"].ConnectionString;
+        public static string username;
 
         public Form1()
         {
@@ -23,6 +24,7 @@ namespace WindowsFormsApp1
 
         private void button2_Click(object sender, EventArgs e)
         {
+            username = textBox1.Text;
             if (textBox1.Text != "" && textBox2.Text != "")
             {
                 SqlConnection con = new SqlConnection(cs);

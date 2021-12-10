@@ -101,7 +101,7 @@ namespace WindowsFormsApp1
             cmd.Parameters.AddWithValue("@Name", textBox5.Text);
             cmd.Parameters.AddWithValue("@Address", textBox6.Text);
             cmd.Parameters.AddWithValue("Age", numericUpDown1.Value);
-            cmd.Parameters.AddWithValue("Gender", comboBox1.SelectedItem);
+            cmd.Parameters.AddWithValue("Gender", textBox7.Text);
             cmd.Parameters.AddWithValue("@photo", SavePhoto());
             con.Open();
             int a = cmd.ExecuteNonQuery();
@@ -127,8 +127,9 @@ namespace WindowsFormsApp1
             textBox3.Text = dataGridView1.SelectedRows[0].Cells[2].Value.ToString();
             textBox5.Text = dataGridView1.SelectedRows[0].Cells[3].Value.ToString();
             textBox6.Text = dataGridView1.SelectedRows[0].Cells[4].Value.ToString();
+            textBox7.Text = dataGridView1.SelectedRows[0].Cells[6].Value.ToString();
             numericUpDown1.Value = Convert.ToInt32(dataGridView1.SelectedRows[0].Cells[5].Value);
-            comboBox1.SelectedItem = dataGridView1.SelectedRows[0].Cells[6].Value.ToString();
+            
             pictureBox1.Image = GetPhoto((byte[])dataGridView1.SelectedRows[0].Cells[7].Value);
         }
 
