@@ -302,7 +302,7 @@ namespace WindowsFormsApp1
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.MicrosoftTeams_image__4_;
+           // this.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.MicrosoftTeams_image__4_;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.label10);

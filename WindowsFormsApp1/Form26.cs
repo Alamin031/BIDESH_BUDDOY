@@ -35,5 +35,19 @@ namespace WindowsFormsApp1
         {
             Application.Exit();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Form28 f28 = new Form28();
+                f28.Show();
+                this.Hide();
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
     }
 }

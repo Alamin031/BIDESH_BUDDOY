@@ -51,7 +51,7 @@ namespace WindowsFormsApp1
             // 
             // groupBox1
             // 
-            this.groupBox1.BackColor = System.Drawing.Color.Teal;
+            this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Controls.Add(this.checkBox1);
             this.groupBox1.Controls.Add(this.textBox2);
@@ -163,6 +163,7 @@ namespace WindowsFormsApp1
             // 
             // pictureBox1
             // 
+            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.pictureBox1.Image = global::WindowsFormsApp1.Properties.Resources._2_removebg_preview;
             this.pictureBox1.Location = new System.Drawing.Point(98, 151);
             this.pictureBox1.Name = "pictureBox1";

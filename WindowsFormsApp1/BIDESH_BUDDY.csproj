@@ -328,9 +328,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\1.jpg" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\2.png" />
   </ItemGroup>
   <ItemGroup>
@@ -346,9 +343,6 @@
     <None Include="Resources\download.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\R.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\download1.jpg" />
   </ItemGroup>
   <ItemGroup>
@@ -358,28 +352,7 @@
     <None Include="Resources\th1.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\MicrosoftTeams-image %282%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\MicrosoftTeams-image %284%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\MicrosoftTeams-image %283%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\MicrosoftTeams-image %282%291.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\MicrosoftTeams-image %283%291.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\R %281%29.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\MicrosoftTeams-image %281%292.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\MicrosoftTeams-image %284%291.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\check.ico" />
@@ -394,7 +367,19 @@
     <None Include="Resources\120408.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\MicrosoftTeams-image %2813%29.png" />
+    <None Include="Resources\MicrosoftTeams-image %2816%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MicrosoftTeams-image %2817%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MicrosoftTeams-image %2815%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MicrosoftTeams-image %2812%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MicrosoftTeams-image %2812%291.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

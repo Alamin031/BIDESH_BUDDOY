@@ -69,9 +69,12 @@ namespace WindowsFormsApp1
             this.label1.Size = new System.Drawing.Size(94, 20);
             this.label1.TabIndex = 6;
             this.label1.Text = "User Name";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // pictureBox1
             // 
+            this.pictureBox1.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.MicrosoftTeams_image__12_;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1.Location = new System.Drawing.Point(10, 25);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(117, 111);
@@ -157,7 +160,7 @@ namespace WindowsFormsApp1
             // 
             // pictureBox2
             // 
-            this.pictureBox2.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.download;
+           // this.pictureBox2.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.download;
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox2.Location = new System.Drawing.Point(352, 139);
             this.pictureBox2.Name = "pictureBox2";

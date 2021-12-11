@@ -64,16 +64,6 @@ namespace WindowsFormsApp1.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap _1 {
-            get {
-                object obj = ResourceManager.GetObject("1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap _120408 {
             get {
                 object obj = ResourceManager.GetObject("120408", resourceCulture);
@@ -112,26 +102,6 @@ namespace WindowsFormsApp1.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap download {
-            get {
-                object obj = ResourceManager.GetObject("download", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap download1 {
-            get {
-                object obj = ResourceManager.GetObject("download1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
         internal static System.Drawing.Icon error {
@@ -164,9 +134,9 @@ namespace WindowsFormsApp1.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap MicrosoftTeams_image__13_ {
+        internal static System.Drawing.Bitmap MicrosoftTeams_image__12_ {
             get {
-                object obj = ResourceManager.GetObject("MicrosoftTeams-image (13)", resourceCulture);
+                object obj = ResourceManager.GetObject("MicrosoftTeams-image (12)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -174,9 +144,9 @@ namespace WindowsFormsApp1.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap MicrosoftTeams_image__2_ {
+        internal static System.Drawing.Bitmap MicrosoftTeams_image__12_1 {
             get {
-                object obj = ResourceManager.GetObject("MicrosoftTeams-image (2)", resourceCulture);
+                object obj = ResourceManager.GetObject("MicrosoftTeams-image (12)1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -184,9 +154,9 @@ namespace WindowsFormsApp1.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap MicrosoftTeams_image__2_1 {
+        internal static System.Drawing.Bitmap MicrosoftTeams_image__15_ {
             get {
-                object obj = ResourceManager.GetObject("MicrosoftTeams-image (2)1", resourceCulture);
+                object obj = ResourceManager.GetObject("MicrosoftTeams-image (15)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -194,9 +164,9 @@ namespace WindowsFormsApp1.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap MicrosoftTeams_image__3_ {
+        internal static System.Drawing.Bitmap MicrosoftTeams_image__16_ {
             get {
-                object obj = ResourceManager.GetObject("MicrosoftTeams-image (3)", resourceCulture);
+                object obj = ResourceManager.GetObject("MicrosoftTeams-image (16)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -204,29 +174,9 @@ namespace WindowsFormsApp1.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap MicrosoftTeams_image__3_1 {
+        internal static System.Drawing.Bitmap MicrosoftTeams_image__17_ {
             get {
-                object obj = ResourceManager.GetObject("MicrosoftTeams-image (3)1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap MicrosoftTeams_image__4_ {
-            get {
-                object obj = ResourceManager.GetObject("MicrosoftTeams-image (4)", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap MicrosoftTeams_image__4_1 {
-            get {
-                object obj = ResourceManager.GetObject("MicrosoftTeams-image (4)1", resourceCulture);
+                object obj = ResourceManager.GetObject("MicrosoftTeams-image (17)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -237,26 +187,6 @@ namespace WindowsFormsApp1.Properties {
         internal static System.Drawing.Bitmap MicrosoftTeams_image__9_ {
             get {
                 object obj = ResourceManager.GetObject("MicrosoftTeams-image (9)", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap R {
-            get {
-                object obj = ResourceManager.GetObject("R", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap R__1_ {
-            get {
-                object obj = ResourceManager.GetObject("R (1)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

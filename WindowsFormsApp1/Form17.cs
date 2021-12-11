@@ -56,12 +56,12 @@ namespace WindowsFormsApp1
             dataGridView1.DataSource = data;
 
             DataGridViewImageColumn dgv = new DataGridViewImageColumn();
-            dgv = (DataGridViewImageColumn)dataGridView1.Columns[6];
+            dgv = (DataGridViewImageColumn)dataGridView1.Columns[7];
             dgv.ImageLayout = DataGridViewImageCellLayout.Stretch;
 
             dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
 
-            dataGridView1.RowTemplate.Height = 50;
+            dataGridView1.RowTemplate.Height = 80;
             con.Open();
         }
 
@@ -80,6 +80,11 @@ namespace WindowsFormsApp1
             {
                 MessageBox.Show("Data Not Delete");
             }
+        }
+
+        private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

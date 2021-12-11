@@ -45,6 +45,7 @@ namespace WindowsFormsApp1
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
+            this.button5 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider2)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -132,6 +133,7 @@ namespace WindowsFormsApp1
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(100, 19);
             this.textBox1.TabIndex = 0;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             this.textBox1.Leave += new System.EventHandler(this.textBox1_Leave);
             // 
             // label3
@@ -186,9 +188,9 @@ namespace WindowsFormsApp1
             this.button3.BackColor = System.Drawing.Color.Teal;
             this.button3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(637, 165);
+            this.button3.Location = new System.Drawing.Point(637, 169);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(94, 32);
+            this.button3.Size = new System.Drawing.Size(123, 32);
             this.button3.TabIndex = 11;
             this.button3.Text = "ADMIN";
             this.button3.UseVisualStyleBackColor = false;
@@ -206,6 +208,19 @@ namespace WindowsFormsApp1
             this.label4.TabIndex = 10;
             this.label4.Text = "LOGIN AS";
             // 
+            // button5
+            // 
+            this.button5.BackColor = System.Drawing.Color.Red;
+            this.button5.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.ForeColor = System.Drawing.Color.White;
+            this.button5.Location = new System.Drawing.Point(637, 365);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(123, 31);
+            this.button5.TabIndex = 13;
+            this.button5.Text = "HOME";
+            this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -213,6 +228,7 @@ namespace WindowsFormsApp1
             this.BackColor = System.Drawing.Color.Teal;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button5);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button4);
@@ -250,5 +266,6 @@ namespace WindowsFormsApp1
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ErrorProvider errorProvider2;
+        private System.Windows.Forms.Button button5;
     }
 }

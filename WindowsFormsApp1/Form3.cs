@@ -15,6 +15,7 @@ namespace WindowsFormsApp1
     public partial class Form3 : Form
     {
         string cs = ConfigurationManager.ConnectionStrings["user"].ConnectionString;
+        public static string username;
         public Form3()
         {
             InitializeComponent();

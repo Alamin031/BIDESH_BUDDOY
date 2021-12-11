@@ -153,5 +153,24 @@ namespace WindowsFormsApp1
         {
             Application.Exit();
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Form26 f26 = new Form26();
+                f26.Show();
+                this.Hide();
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
