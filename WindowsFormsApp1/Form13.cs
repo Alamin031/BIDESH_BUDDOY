@@ -61,7 +61,7 @@ namespace WindowsFormsApp1
         void BindGridView()
         {
             SqlConnection con = new SqlConnection(cs);
-            string query = "select * from s_r_info where email='" + textBox4.Text + "'";
+            string query = "select * from s_r_info where ID='" + textBox4.Text + "'";
             SqlDataAdapter sda = new SqlDataAdapter(query, con);
 
             DataTable data = new DataTable();
@@ -93,7 +93,7 @@ namespace WindowsFormsApp1
         private void button3_Click(object sender, EventArgs e)
         {
             SqlConnection con = new SqlConnection(cs);
-            string query = "update s_r_info set email=@email,Password=@Password,ID=@ID,Name=@Name,Address=@Address,Age=@Age,Gender=@Gender,photo=@photo where email=@email";
+            string query = "update s_r_info set email=@email,Password=@Password,ID=@ID,Name=@Name,Address=@Address,Age=@Age,Gender=@Gender,photo=@photo where ID=@ID";
             SqlCommand cmd = new SqlCommand(query, con);
             cmd.Parameters.AddWithValue("@email", textBox1.Text);
             cmd.Parameters.AddWithValue("@Password", textBox2.Text);
@@ -142,7 +142,7 @@ namespace WindowsFormsApp1
         private void button4_Click(object sender, EventArgs e)
         {
             SqlConnection con = new SqlConnection(cs);
-            string query = "delete from s_r_info where email=@email";
+            string query = "delete from s_r_info where ID=@ID";
             SqlCommand cmd = new SqlCommand(query, con);
             cmd.Parameters.AddWithValue("@email", textBox1.Text);
             cmd.Parameters.AddWithValue("@Password", textBox2.Text);
@@ -198,7 +198,7 @@ namespace WindowsFormsApp1
         {
             SqlConnection con = new SqlConnection(cs);
             con.Open();
-            string query = "select * from s_r_info where email='" + textBox4.Text + "'";
+            string query = "select * from s_r_info where ID='" + textBox4.Text + "'";
             SqlDataAdapter sda = new SqlDataAdapter(query, con);
 
             DataTable data = new DataTable();

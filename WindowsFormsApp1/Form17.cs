@@ -68,7 +68,7 @@ namespace WindowsFormsApp1
         private void button3_Click(object sender, EventArgs e)
         {
             SqlConnection con = new SqlConnection(cs);
-            string query = "delete from s_r_info where email=@email";
+            string query = "delete from s_r_info where ID=ID";
             SqlCommand cmd = new SqlCommand(query, con);
             con.Open();
             int a = cmd.ExecuteNonQuery();

@@ -35,14 +35,14 @@ namespace WindowsFormsApp1
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -114,6 +114,28 @@ namespace WindowsFormsApp1
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.White;
+            this.label7.Location = new System.Drawing.Point(366, 179);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(143, 75);
+            this.label7.TabIndex = 8;
+            this.label7.Text = "NAME: AZRAF FAHEEM\r\n\r\nID: 20-42152-1\r\n\r\nStudent";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.Location = new System.Drawing.Point(180, 179);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(175, 75);
+            this.label6.TabIndex = 7;
+            this.label6.Text = "NAME: S.M.TAWFIQ RASHID\r\n                       \r\nID: 20-43518-1\r\n\r\nStudent";
+            // 
             // pictureBox4
             // 
             this.pictureBox4.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.MicrosoftTeams_image__15_;
@@ -177,28 +199,6 @@ namespace WindowsFormsApp1
             this.pictureBox2.TabIndex = 1;
             this.pictureBox2.TabStop = false;
             // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(180, 179);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(175, 75);
-            this.label6.TabIndex = 7;
-            this.label6.Text = "NAME: S.M.TAWFIQ RASHID\r\n                       \r\nID: 20-43518-1\r\n\r\nStudent";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(366, 179);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(143, 75);
-            this.label7.TabIndex = 8;
-            this.label7.Text = "NAME: AZRAF FAHEEM\r\n\r\nID: 20-42152-1\r\n\r\nStudent";
-            // 
             // Form28
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -210,6 +210,8 @@ namespace WindowsFormsApp1
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form28";
             this.Text = "PROJECT DETAILLS";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form28_FormClosing);
+            this.Load += new System.EventHandler(this.Form28_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

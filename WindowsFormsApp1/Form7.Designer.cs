@@ -160,7 +160,7 @@ namespace WindowsFormsApp1
             // 
             // pictureBox2
             // 
-           // this.pictureBox2.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.download;
+            this.pictureBox2.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.download;
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox2.Location = new System.Drawing.Point(352, 139);
             this.pictureBox2.Name = "pictureBox2";

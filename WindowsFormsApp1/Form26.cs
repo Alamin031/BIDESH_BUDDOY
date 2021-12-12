@@ -49,5 +49,10 @@ namespace WindowsFormsApp1
                 throw;
             }
         }
+
+        private void Form26_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
