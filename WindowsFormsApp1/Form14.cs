@@ -16,6 +16,7 @@ namespace WindowsFormsApp1
     public partial class Form14 : Form
     {
         string cs = ConfigurationManager.ConnectionStrings["user"].ConnectionString;
+        public static string Form_No;
         public Form14()
         {
             InitializeComponent();
@@ -24,8 +25,10 @@ namespace WindowsFormsApp1
 
         private void button5_Click(object sender, EventArgs e)
         {
+            Form_No = textBox16.Text;
+
             SqlConnection con = new SqlConnection(cs);
-            string query = "insert into A_From values (@Name,@Marital_Status,@Nationality,@Email,@DOB,@University_Name,@University_Id,@Department,@Course,@Father_Name,@Mother_Name,@Address,@Mobile_No,@Photo,@Year_Of_Passing_HSC,@CGPA_HSC,@gender)";
+            string query = "insert into A_From values (@Name,@Marital_Status,@Nationality,@Email,@DOB,@University_Name,@University_Id,@Department,@Course,@Father_Name,@Mother_Name,@Address,@Mobile_No,@Photo,@Year_Of_Passing_HSC,@CGPA_HSC,@gender,@Form_No)";
             SqlCommand cmd = new SqlCommand(query, con);
             cmd.Parameters.AddWithValue("@Name", textBox1.Text);
             cmd.Parameters.AddWithValue("@Marital_Status", textBox2.Text);
@@ -44,16 +47,17 @@ namespace WindowsFormsApp1
             cmd.Parameters.AddWithValue("@Year_Of_Passing_HSC", textBox13.Text);
             cmd.Parameters.AddWithValue("@CGPA_HSC", textBox14.Text);
             cmd.Parameters.AddWithValue("@Gender", textBox15.Text);
+            cmd.Parameters.AddWithValue("@Form_No", textBox16.Text);
 
 
             con.Open();
             int a = cmd.ExecuteNonQuery();
             if (a > 0)
             {
-                Form23 f23 = new Form23();
-                f23.Show();
+                Form30 f30 = new Form30();
+                f30.Show();
                 this.Hide();
-                MessageBox.Show("Data Submit Successfully");
+                MessageBox.Show("Data Submit Successfully Please Submit EDUCATIONAL BACKGROUND");
                 ResetControl();
 
 
@@ -110,6 +114,7 @@ namespace WindowsFormsApp1
             textBox13.Clear();
             textBox14.Clear();
             textBox15.Clear();
+            textBox15.Clear();
             pictureBox1.Image = Properties.Resources.no_image_avaiable;
         }
 
@@ -143,6 +148,11 @@ namespace WindowsFormsApp1
             {
                 throw;
             }
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

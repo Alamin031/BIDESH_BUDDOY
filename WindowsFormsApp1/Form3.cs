@@ -46,17 +46,19 @@ namespace WindowsFormsApp1
             catch (Exception)
             {
                 throw;
-            }
+            } 
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
+            username = textBox1.Text;
             if (textBox1.Text != "" && textBox2.Text != "")
             {
                 SqlConnection con = new SqlConnection(cs);
                 string query = "select * from a_r_info where email=@email and pass=@pass";
                 SqlCommand cmd = new SqlCommand(query, con);
                 cmd.Parameters.AddWithValue("@email", textBox1.Text);
+                cmd.Parameters.AddWithValue("@name", textBox1.Text);
                 cmd.Parameters.AddWithValue("@pass", textBox2.Text);
                 con.Open();
                 SqlDataReader dr = cmd.ExecuteReader();
