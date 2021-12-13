@@ -56,10 +56,10 @@ namespace WindowsFormsApp1
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -390,22 +390,12 @@ namespace WindowsFormsApp1
             this.groupBox1.Text = "EDUCATIONAL BACKGROUND";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
-            // label13
+            // textBox3
             // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(325, 25);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(130, 24);
-            this.label13.TabIndex = 26;
-            this.label13.Text = "Your Form No";
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(461, 25);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(0, 24);
-            this.label14.TabIndex = 27;
+            this.textBox3.Location = new System.Drawing.Point(141, 87);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(121, 29);
+            this.textBox3.TabIndex = 29;
             // 
             // label15
             // 
@@ -416,12 +406,22 @@ namespace WindowsFormsApp1
             this.label15.TabIndex = 28;
             this.label15.Text = "Enter Your Form No";
             // 
-            // textBox3
+            // label14
             // 
-            this.textBox3.Location = new System.Drawing.Point(141, 87);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(121, 29);
-            this.textBox3.TabIndex = 29;
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(461, 25);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(0, 24);
+            this.label14.TabIndex = 27;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(325, 25);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(130, 24);
+            this.label13.TabIndex = 26;
+            this.label13.Text = "Your Form No";
             // 
             // Form30
             // 
@@ -431,6 +431,7 @@ namespace WindowsFormsApp1
             this.ClientSize = new System.Drawing.Size(860, 486);
             this.Controls.Add(this.groupBox1);
             this.Name = "Form30";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form30";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form30_FormClosing);
             this.groupBox1.ResumeLayout(false);

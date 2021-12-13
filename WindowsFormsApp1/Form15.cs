@@ -58,5 +58,13 @@ namespace WindowsFormsApp1
         {
             Application.Exit();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+          
+                Form32 f32 = new Form32();
+                f32.Show();
+                this.Hide();
+        }
     }
 }

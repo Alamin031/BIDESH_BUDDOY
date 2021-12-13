@@ -29,7 +29,7 @@ namespace WindowsFormsApp1
         void BindGridView()
         {
             SqlConnection con = new SqlConnection(cs);
-            string query = "select * Educational_Background";
+            string query = "select * From Educational_Background";
             SqlDataAdapter sda = new SqlDataAdapter(query, con);
 
             DataTable data = new DataTable();
@@ -43,6 +43,38 @@ namespace WindowsFormsApp1
             dataGridView1.RowTemplate.Height = 80;
 
         }
- 
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Form15 f15 = new Form15();
+                f15.Show();
+                this.Hide();
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Form6 f6 = new Form6();
+                f6.Show();
+                this.Hide();
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

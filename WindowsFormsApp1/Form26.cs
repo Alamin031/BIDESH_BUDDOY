@@ -54,5 +54,19 @@ namespace WindowsFormsApp1
         {
 
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Form29 f29 = new Form29();
+                f29.Show();
+                this.Hide();
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
     }
 }

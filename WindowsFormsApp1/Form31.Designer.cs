@@ -98,6 +98,7 @@ namespace WindowsFormsApp1
             this.Controls.Add(this.label1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form31";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Admission form";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form31_FormClosing);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
