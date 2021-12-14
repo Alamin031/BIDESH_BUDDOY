@@ -5,8 +5,6 @@ VisualStudioVersion = 16.0.31911.196
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BIDESH_BUDDY", "WindowsFormsApp1\BIDESH_BUDDY.csproj", "{4779AC13-13FA-4190-AE9D-0681AE191206}"
 EndProject
-Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "BIDESH_BUDDY", "BIDESH_BUDDY\BIDESH_BUDDY.vdproj", "{628F8AE2-1E52-4EE3-8A6E-17879DEE8347}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,8 +15,6 @@ Global
 		{4779AC13-13FA-4190-AE9D-0681AE191206}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4779AC13-13FA-4190-AE9D-0681AE191206}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4779AC13-13FA-4190-AE9D-0681AE191206}.Release|Any CPU.Build.0 = Release|Any CPU
-		{628F8AE2-1E52-4EE3-8A6E-17879DEE8347}.Debug|Any CPU.ActiveCfg = Debug
-		{628F8AE2-1E52-4EE3-8A6E-17879DEE8347}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
