@@ -196,7 +196,7 @@ namespace WindowsFormsApp1
 
         private void Form8_Load(object sender, EventArgs e)
         {
-
+            MaximizeBox = false;
         }
 
         private void groupBox1_Enter(object sender, EventArgs e)

@@ -42,7 +42,7 @@ namespace WindowsFormsApp1
 
         private void Form17_Load(object sender, EventArgs e)
         {
-
+            MaximizeBox = false;
         }
 
         private void button2_Click(object sender, EventArgs e)

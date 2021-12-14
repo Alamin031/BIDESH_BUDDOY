@@ -56,5 +56,10 @@ namespace WindowsFormsApp1
         {
             Application.Exit();
         }
+
+        private void Form24_Load(object sender, EventArgs e)
+        {
+            MaximizeBox = false;
+        }
     }
 }

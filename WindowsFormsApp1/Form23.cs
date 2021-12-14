@@ -75,7 +75,7 @@ namespace WindowsFormsApp1
 
         private void Form23_Load(object sender, EventArgs e)
         {
-
+            MaximizeBox = false;
         }
     }
 }

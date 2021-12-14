@@ -24,7 +24,7 @@ namespace WindowsFormsApp1
 
         private void Form28_Load(object sender, EventArgs e)
         {
-
+            MaximizeBox = false;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -39,6 +39,11 @@ namespace WindowsFormsApp1
             {
                 throw;
             }
+        }
+
+        private void groupBox2_Enter(object sender, EventArgs e)
+        {
+
         }
     }
 }

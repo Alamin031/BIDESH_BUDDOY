@@ -84,6 +84,8 @@ namespace WindowsFormsApp1
         private void Form7_Load(object sender, EventArgs e)
         {
             label1.Text = Form1.username;
+
+            MaximizeBox = false;
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)

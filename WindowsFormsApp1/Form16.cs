@@ -94,7 +94,7 @@ namespace WindowsFormsApp1
 
         private void Form16_Load(object sender, EventArgs e)
         {
-
+            MaximizeBox = false;
         }
     }
 }

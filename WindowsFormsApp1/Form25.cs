@@ -54,7 +54,7 @@ namespace WindowsFormsApp1
 
         private void Form25_Load(object sender, EventArgs e)
         {
-
+            MaximizeBox = false;
         }
 
         private void Form25_FormClosing(object sender, FormClosingEventArgs e)

@@ -71,7 +71,7 @@ namespace WindowsFormsApp1
 
         private void Form9_Load(object sender, EventArgs e)
         {
-
+            MaximizeBox = false;
         }
 
         private void button4_Click(object sender, EventArgs e)

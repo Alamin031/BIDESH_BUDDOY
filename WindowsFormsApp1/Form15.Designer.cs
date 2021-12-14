@@ -116,6 +116,7 @@ namespace WindowsFormsApp1
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Check Admission From";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form15_FormClosing);
+            this.Load += new System.EventHandler(this.Form15_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

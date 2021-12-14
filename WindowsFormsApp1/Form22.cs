@@ -53,7 +53,7 @@ namespace WindowsFormsApp1
 
         private void Form22_Load(object sender, EventArgs e)
         {
-
+            MaximizeBox = false;
         }
     }
 }

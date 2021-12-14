@@ -24,7 +24,7 @@ namespace WindowsFormsApp1
 
         private void Form32_Load(object sender, EventArgs e)
         {
-
+            MaximizeBox = false;
         }
         void BindGridView()
         {

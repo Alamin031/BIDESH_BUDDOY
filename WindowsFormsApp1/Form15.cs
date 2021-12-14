@@ -66,5 +66,10 @@ namespace WindowsFormsApp1
                 f32.Show();
                 this.Hide();
         }
+
+        private void Form15_Load(object sender, EventArgs e)
+        {
+            MaximizeBox = false;
+        }
     }
 }

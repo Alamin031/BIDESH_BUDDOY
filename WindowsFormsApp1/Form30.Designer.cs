@@ -434,6 +434,7 @@ namespace WindowsFormsApp1
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form30";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form30_FormClosing);
+            this.Load += new System.EventHandler(this.Form30_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);

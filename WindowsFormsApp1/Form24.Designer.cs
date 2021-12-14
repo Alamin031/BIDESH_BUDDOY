@@ -106,6 +106,7 @@ namespace WindowsFormsApp1
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Discount";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form24_FormClosing);
+            this.Load += new System.EventHandler(this.Form24_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -107,6 +107,7 @@ namespace WindowsFormsApp1
             this.Name = "Form29";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "About";
+            this.Load += new System.EventHandler(this.Form29_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

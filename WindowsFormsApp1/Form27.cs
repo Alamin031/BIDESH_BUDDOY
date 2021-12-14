@@ -77,7 +77,7 @@ namespace WindowsFormsApp1
 
         private void Form27_Load(object sender, EventArgs e)
         {
-
+            MaximizeBox = false;
         }
 
         private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)

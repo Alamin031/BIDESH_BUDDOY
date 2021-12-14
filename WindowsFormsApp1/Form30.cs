@@ -104,5 +104,10 @@ namespace WindowsFormsApp1
             comboBox10.SelectedItem = null;
             
         }
+
+        private void Form30_Load(object sender, EventArgs e)
+        {
+            MaximizeBox = false;
+        }
     }
 }

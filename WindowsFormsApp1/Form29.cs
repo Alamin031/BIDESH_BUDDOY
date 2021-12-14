@@ -30,5 +30,10 @@ namespace WindowsFormsApp1
                 throw;
             }
         }
+
+        private void Form29_Load(object sender, EventArgs e)
+        {
+            MaximizeBox = false;
+        }
     }
 }
