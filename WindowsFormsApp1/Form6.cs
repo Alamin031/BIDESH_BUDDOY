@@ -38,8 +38,8 @@ namespace WindowsFormsApp1
         {
             try
             {
-                Form8 f8 = new Form8();
-                f8.Show();
+                Form33 f33 = new Form33();
+                f33.Show();
                 this.Hide();
             }
             catch (Exception)
@@ -50,30 +50,12 @@ namespace WindowsFormsApp1
 
         private void button2_Click(object sender, EventArgs e)
         {
-            try
-            {
-                Form11 f11 = new Form11();
-                f11.Show();
-                this.Hide();
-            }
-            catch (Exception)
-            {
-                throw;
-            }
+           
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            try
-            {
-                Form12 f12 = new Form12();
-                f12.Show();
-                this.Hide();
-            }
-            catch (Exception)
-            {
-                throw;
-            }
+           
         }
 
         private void Form6_FormClosing(object sender, FormClosingEventArgs e)

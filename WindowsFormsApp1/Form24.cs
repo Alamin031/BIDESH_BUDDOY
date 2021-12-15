@@ -40,16 +40,7 @@ namespace WindowsFormsApp1
 
         private void button6_Click(object sender, EventArgs e)
         {
-            try
-            {
-                Form9 f9 = new Form9();
-                f9.Show();
-                this.Hide();
-            }
-            catch (Exception)
-            {
-                throw;
-            }
+            
         }
 
         private void Form24_FormClosing(object sender, FormClosingEventArgs e)

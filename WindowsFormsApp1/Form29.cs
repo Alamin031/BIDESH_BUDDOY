@@ -35,5 +35,15 @@ namespace WindowsFormsApp1
         {
             MaximizeBox = false;
         }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form29_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

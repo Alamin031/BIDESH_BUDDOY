@@ -94,6 +94,7 @@ namespace WindowsFormsApp1
             this.Name = "Form32";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form32";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form32_FormClosing);
             this.Load += new System.EventHandler(this.Form32_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);

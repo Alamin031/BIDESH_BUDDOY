@@ -66,8 +66,8 @@ namespace WindowsFormsApp1
         {
             try
             {
-                Form9 f9 = new Form9();
-                f9.Show();
+                Form8 f8 = new Form8();
+                f8.Show();
                 this.Hide();
             }
             catch (Exception)

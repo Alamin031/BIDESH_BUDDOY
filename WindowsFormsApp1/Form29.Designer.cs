@@ -53,6 +53,7 @@ namespace WindowsFormsApp1
             this.groupBox1.Size = new System.Drawing.Size(776, 426);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // button1
             // 
@@ -107,6 +108,7 @@ namespace WindowsFormsApp1
             this.Name = "Form29";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "About";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form29_FormClosing);
             this.Load += new System.EventHandler(this.Form29_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

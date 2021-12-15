@@ -76,5 +76,10 @@ namespace WindowsFormsApp1
         {
 
         }
+
+        private void Form32_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
